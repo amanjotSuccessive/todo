@@ -1,0 +1,25 @@
+<template name = "signUp">
+        <form class = "signUpForm">
+            {{>inputLabel   value= "User Name : " class = "newUser"}}
+            {{>inputField   name= "userSignUp" class = "newUser"}}
+                <br>
+            {{>inputLabel   value= "City :" class = "newUser"}}
+            {{>inputField   name= "citySignUp" class = "newUser"}}
+                <br>
+            {{>inputLabel   value= "Address :" class = "newUser"}}
+            {{>inputField   name= "addressSignUp" class = "newUser"}}
+                <br>
+            {{>inputLabel   value= "Age :" class = "newUser"}}
+            {{>inputSelect   name= "ageSignUp" class = "newUser"}}
+                <br>
+            {{>inputLabel   value= "Agree :" class = "newUser"}}
+            {{>inputCheck   name= "agreeSignUp" class = "newUser"}}
+                <br>
+            {{>inputLabel   value= "User Password :" class = "newUser"}}
+            {{>inputField   name= "passwordSignUp" class = "newUser"}}
+                <br>        
+            {{>inputSubmitButton type = "submit" name = "signUpSignUp" class ="newUser" value = "Submit"}} 
+            <a href = "http://localhost:3000/login"> Already a User </a>
+        </form>
+</template>
+    

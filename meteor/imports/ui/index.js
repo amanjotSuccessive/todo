@@ -1,9 +1,9 @@
-import './signUp.html';
-import './loginPage.html';
+import './signUp/signUp';
+import './loginPage/loginPage';
+import './dashBoard/dashBoard';
 import './components/inputFieldTemplate.html';
 import './components/inputRadioTemplate.html';
 import './components/inputButtonTemplate.html';
 import './components/inputLabelTemplate.html';
 import './components/inputSelectTemplate';
 import './components/inputCheckTemplate.html';
-//console.log(FlowRouter.getRouteName());

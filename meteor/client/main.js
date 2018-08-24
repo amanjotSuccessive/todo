@@ -1,3 +1,3 @@
 import './main.html';
-import '../imports/ui/body.js';
+import '../imports/ui/index';
 import '../imports/lib/router';

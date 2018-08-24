@@ -6,3 +6,21 @@ FlowRouter.route('/login', {
     BlazeLayout.render('login');
   },
 });
+
+FlowRouter.route('/', {
+  action: () => {
+    BlazeLayout.render('login');
+  },
+});
+
+FlowRouter.route('/signUp', {
+  action: () => {
+    BlazeLayout.render('signUp');
+  },
+});
+
+FlowRouter.route('/dashBoard', {
+  action: () => {
+    BlazeLayout.render('dashBoard');
+  },
+});

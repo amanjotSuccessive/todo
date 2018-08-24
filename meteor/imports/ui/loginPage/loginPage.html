@@ -1,0 +1,12 @@
+<template name='login'>
+        <form class = 'loginForm'>
+                {{>inputLabel value= "User Name : " class = "user"}}
+                <br> {{>inputField name= "nameLogin" class = "user"}}
+                <br>
+                <br> {{>inputLabel value= "User Password :" class = "user"}}
+                <br> {{>inputField name= "passwordLogin" class = "user"}}
+                <br>
+                <br> {{>inputSubmitButton  name = "loginLogin" class ="user" value = "Login"}} 
+                <a href = "http://localhost:3000/signUp"> New User? </a>
+        </form>
+</template>
