@@ -1,5 +1,10 @@
 <template name = 'dashBoard'>
     <div>
-        <h1>WELCOME TO DASHBOARD</h1>
+        {{#if currentUser}}
+          <h1>WELCOME TO DASHBOARD</h1>
+        {{else}}
+          {{>signUp}}
+          {{>login}}
+        {{/if}}
     </div>
 </template> 

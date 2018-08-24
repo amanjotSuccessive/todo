@@ -1,4 +1,5 @@
 import './loginPage.html';
+import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 // import { Tasks } from '../../api/tasks.js';
 
@@ -12,6 +13,6 @@ Template.login.events({
     
     console.log("login", loginName);
     console.log("pass", loginPassword);
-
+    Meteor.loginWithPassword(loginName, loginPassword);
   },
 });

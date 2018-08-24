@@ -1,40 +1,37 @@
-import { Mongo } from 'meteor/mongo';
-
+import { Meteor } from 'meteor/meteor';
 import { SimpleSchema } from 'simpl-schema/dist/SimpleSchema';
-
-const info = new Mongo.Collection('info');
 
 const Schema = {};
 
 Schema.info = new SimpleSchema({
   _id: {
     type: String,
-    optional: true,
-  },
-  name: {
-    type: String,
-    max: 50,
   },
   city: {
     type: String,
     max: 50,
+    optional: true
   },
   address: {
-    type: Number,
+    type: String,
     max: 100,
+    optional: true
   },
   age: {
     type: Number,
     optional: true,
     defaultValue: 18,
+    optional: true
   },
-  password: {
-    type: String,
-    min: 4,
+  "username": {
+      type: String,
+      optional: false
   },
-  agree: {
-    type: String,
+  "services": {
+    type: Object,
+    blackbox: true
   },
 });
-info.attachSchema(Schema.info);
-export default info;
+const Users = Meteor.users;
+Users.attachSchema(Schema.info);
+export default Users;
