@@ -1,6 +1,7 @@
 import './signUp/signUp';
 import './loginPage/loginPage';
 import './dashBoard/dashBoard';
+import './mainLayout/mainLayout';
 import './components/inputFieldTemplate.html';
 import './components/inputRadioTemplate.html';
 import './components/inputButtonTemplate.html';

@@ -10,26 +10,25 @@ Schema.info = new SimpleSchema({
   city: {
     type: String,
     max: 50,
-    optional: true
+    optional: true,
   },
   address: {
     type: String,
     max: 100,
-    optional: true
+    optional: true,
   },
   age: {
     type: Number,
     optional: true,
     defaultValue: 18,
-    optional: true
   },
-  "username": {
-      type: String,
-      optional: false
+  username: {
+    type: String,
+    optional: false,
   },
-  "services": {
+  services: {
     type: Object,
-    blackbox: true
+    blackbox: true,
   },
 });
 const Users = Meteor.users;

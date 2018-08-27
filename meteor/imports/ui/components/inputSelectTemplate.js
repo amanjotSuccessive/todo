@@ -1,14 +1,17 @@
 import './inputSelectTemplate.html';
+import { Template } from 'meteor/templating';
 
 Template.inputSelect.helpers({
-  runner: function () {
-    let a = [],
-      i;
+  runner () {
+    const a = [];
+
+
+    let i;
     for (i = 18; i <= 100; i++) {
       a.push({
-        age: i
+        age: i,
       });
     }
     return a;
-  }
+  },
 });
