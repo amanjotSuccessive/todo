@@ -5,6 +5,7 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 function for defining route 'Login'
 Shown as default/home page.
 */
+
 FlowRouter.route('/login', {
   action: () => {
     BlazeLayout.render('mainLayout', { header: 'header', main: 'login' });
@@ -42,7 +43,7 @@ helper function of triggersEnter function.
 trigger at the end when user hit '/' route.
 */
 function trackRouteClose(context) {
-  console.log('action() skipped : trackRouteClose');
+  // console.log('action() skipped : trackRouteClose');
   // Mixpanel.track('move-from-home', context.queryParams);
 }
 

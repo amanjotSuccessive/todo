@@ -1,23 +1,29 @@
 <template name = "signUp">
         <form class = "signUpForm">
             {{>inputLabel   value= "User Name : " class = "newUser"}}
-            {{>inputField   name= "userSignUp" class = "newUser"}}
-                <br>
+            {{>inputField   name= "userSignUp" class = "newUser" validate = true id="userName" }}
+            {{>errorTemplate id ="userNameError" }}
+            <br>
             {{>inputLabel   value= "City :" class = "newUser"}}
-            {{>inputField   name= "citySignUp" class = "newUser"}}
-                <br>
+            {{>inputField   name= "citySignUp" class = "newUser" id= "userCity"}}
+            {{>errorTemplate id ="userCityError" }}
+            <br>
             {{>inputLabel   value= "Address :" class = "newUser"}}
-            {{>inputField   name= "addressSignUp" class = "newUser"}}
-                <br>
+            {{>inputField   name= "addressSignUp" class = "newUser" id = 'userAddress'}}
+            {{>errorTemplate id ="userAddressError" }}
+            <br>
             {{>inputLabel   value= "Age :" class = "newUser"}}
-            {{>inputSelect   name= "ageSignUp" class = "newUser"}}
-                <br>
+            {{>inputSelect   name= "ageSignUp" class = "newUser" id = "userAge"}}
+            {{>errorTemplate id ="userAgeError" }}
+            <br>
             {{>inputLabel   value= "Agree :" class = "newUser"}}
-            {{>inputCheck   name= "agreeSignUp" class = "newUser"}}
-                <br>
+            {{>inputCheck   name= "agreeSignUp" class = "newUser" id = "userAgree"}}
+            {{>errorTemplate id ="userAgreeError" }}
+            <br>
             {{>inputLabel   value= "User Password :" class = "newUser"}}
-            {{>inputField   name= "passwordSignUp" class = "newUser"}}
-                <br>        
+            {{>inputField   name= "passwordSignUp" class = "newUser" id = 'userPassword'}}
+            {{>errorTemplate id ="userPasswordError" }}
+            <br>        
             {{>inputSubmitButton type = "submit" name = "signUpSignUp" class ="newUser" value = "Submit"}} 
             <a href = "http://localhost:3000/login"> Already a User </a>
         </form>

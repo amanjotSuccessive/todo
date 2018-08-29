@@ -1,7 +1,7 @@
 <template name='login'>
         <form class = 'loginForm'>
                 {{>inputLabel value= "User Name : " class = "user"}}
-                <br> {{>inputField name= "nameLogin" class = "user"}}
+                <br> {{>inputField name= "nameLogin" class = "user" validate = true id = "loginName"}}
                 <br>
                 <br> {{>inputLabel value= "User Password :" class = "user"}}
                 <br> {{>inputField name= "passwordLogin" class = "user"}}

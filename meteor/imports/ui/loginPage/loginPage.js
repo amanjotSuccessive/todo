@@ -13,9 +13,13 @@ Template.login.events({
     const target = event.target;
     const loginName = target.nameLogin.value;
     const loginPassword = target.passwordLogin.value;
-    // console.log("login", loginName);
-    // console.log("pass", loginPassword);
-    Meteor.loginWithPassword(loginName, loginPassword);
-    FlowRouter.go('/dashBoard');
+    Meteor.loginWithPassword(loginName, loginPassword, function(err, response) {
+      if (err) {
+        alert('Something went wrong');
+      }
+      else {
+        FlowRouter.go('/dashBoard');
+      }
+    });
   },
 });
