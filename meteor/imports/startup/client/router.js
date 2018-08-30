@@ -1,6 +1,6 @@
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
-
+import '../../ui/index';
 /*
 function for defining route 'Login'
 Shown as default/home page.
@@ -27,7 +27,6 @@ FlowRouter.route('/signUp', {
 
 /*
 function for defining route 'DashBoard'
-Note : IN PROGRESS, FUTURE FUNCTIONALITY
 This feature is only available for registered Users.
 If some non logged user try to access this URL then they will be directed to login page.
 */

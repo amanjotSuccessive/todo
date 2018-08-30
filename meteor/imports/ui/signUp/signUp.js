@@ -3,15 +3,20 @@ import { Template } from 'meteor/templating';
 import { Meteor } from 'meteor/meteor';
 // import info from '../../api/tasks.js';
 
+Template.signUp.helpers({
+ error: () =>{
+   return Template.instance().low.get()
+   }
+});
 
 Template.signUp.events({
-    /*
+  /*
   Function to insert data on successful signIn
   gets the data from text field of the form
   */
   'submit .signUpForm'(event) {
     event.preventDefault();
-    console.log('signUpForm');
+    // console.log('signUpForm');
     // const target = event.target;
     const { target } = event;
     const userSignUp = target.userSignUp.value;

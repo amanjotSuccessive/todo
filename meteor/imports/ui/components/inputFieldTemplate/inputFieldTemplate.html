@@ -1,9 +1,8 @@
 
 <template name = "inputField">
     <input type="text" name = {{name}}  class ="form-group" {{class}} placeholder="Enter the text here" id = {{id}}>
-</template>
-
-<template name = "inputFieldDemo">
-    <input type="text" placeholder="Enter the text here" value = "Default value">
+    {{#if error}}
+            {{>errorTemplate id ="userNameError" value = error}}
+    {{/if}}
 </template>
 
