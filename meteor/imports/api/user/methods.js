@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
-import Users from './tasks';
+import Users from './users';
 
 /*
 Method to create new User and enter user data in database.
@@ -26,3 +26,5 @@ Meteor.methods({
   },
 
 });
+
+

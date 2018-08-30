@@ -6,6 +6,9 @@ import { Template } from 'meteor/templating';
 /*
 function to verify user login credentials
 */
+Template.login.onRendered(function() {
+  
+});
 Template.login.events({
   'submit .loginForm'(event) {
     event.preventDefault();
@@ -19,6 +22,9 @@ Template.login.events({
       }
       else {
         FlowRouter.go('/dashBoard');
+      //  $('body').ready(function () {
+       //   alert('Only Numbers');
+       // }); 
       }
     });
   },

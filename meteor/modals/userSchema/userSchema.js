@@ -1,9 +1,6 @@
-import { Meteor } from 'meteor/meteor';
 import { SimpleSchema } from 'simpl-schema/dist/SimpleSchema';
 
-const Schema = {};
-
-Schema.info = new SimpleSchema({
+const Schema = new SimpleSchema({
   _id: {
     type: String,
   },
@@ -31,6 +28,5 @@ Schema.info = new SimpleSchema({
     blackbox: true,
   },
 });
-const Users = Meteor.users;
-Users.attachSchema(Schema.info);
-export default Users;
+
+export default Schema;

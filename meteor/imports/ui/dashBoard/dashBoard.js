@@ -15,3 +15,13 @@ Template.dashBoard.events({
     });
   },
 });
+Template.dashBoard.helpers({
+cUser : () => {
+
+  return (Meteor.user().username + '<br>') ;
+}
+});
+/* Template.dashBoard.onCreated(function bodyOnCreated() {
+  this.state = new ReactiveDict();
+  Meteor.subscribe('tasks');
+}); */

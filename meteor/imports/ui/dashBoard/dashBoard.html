@@ -1,7 +1,7 @@
 <template name = 'dashBoard'>
     <div>
         {{#if currentUser}}
-          <h1>WELCOME TO DASHBOARD</h1>
+          <h1>{{{cUser}}} WELCOME TO DASHBOARD </h1>
           <br> {{>inputButton  name = "dashBoardLoginOut" class ="loginUser" value = "Login Out" }} 
         {{else}}
           <h1 style="background:red ">You are not Logged In Please Login to Continue.</h1>
