@@ -7,5 +7,20 @@
           <h1 style="background:red ">You are not Logged In Please Login to Continue.</h1>
           {{>login}}
         {{/if}}
+{{pubSub}}
+        {{#if isOwner}}
+         <h2>owner</h2>
+         <button class="toggle-private">
+         {{#if private}}
+            Private
+            <h2>Private</h2>
+          {{else}}
+            <h2>Public</h2>
+            Public
+          {{/if}}
+        </button>
+        {{else}}
+        <h2>not a owner</h2>
+      {{/if}}
     </div>
 </template> 

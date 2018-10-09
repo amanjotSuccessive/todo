@@ -21,8 +21,10 @@ Template.login.events({
         alert('Something went wrong');
       }
       else {
+        console.log('response', response);
+        //Meteor.subscribe('pubSub');
         FlowRouter.go('/dashBoard');
-      //  $('body').ready(function () {
+       //  $('body').ready(function () {
        //   alert('Only Numbers');
        // }); 
       }
